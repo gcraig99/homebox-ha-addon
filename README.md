@@ -9,14 +9,17 @@ Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>
 
 This repository contains the following add-ons
 
-### [Example add-on](./example)
+### [Homebox Inventory System add-on](./homebox)
+
+**Deployment Architectures**
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
-![Supports armhf Architecture][armhf-shield]
 ![Supports armv7 Architecture][armv7-shield]
+![Supports armhf Architecture][armhf-shield]
+![Supports i386 Architecture][i386-shield]
 
-_Example add-on to use as a blueprint for new add-ons._
+_Add-on for running the Homebox Inventory System as part of a HomeAssistant Deployment_
 
 <!--
 
@@ -39,5 +42,6 @@ Notes to developers after forking or using the github template feature:
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
