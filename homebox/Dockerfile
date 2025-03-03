@@ -24,7 +24,7 @@ LABEL \
     org.opencontainers.image.source="https://github.com/sysadminsmedia/homebox-ha-addon" \
     maintainer="John Scarrott <awesome@example.com>" \
     org.opencontainers.image.vendor="Home Assistant Community Add-ons" \
-    org.opencontainers.image.authors="John Scarrott <awesome@example.com>" \
+    org.opencontainers.image.authors="Gordon Craig <awesome@example.com>" \
     org.opencontainers.image.licenses="MIT" \
     org.opencontainers.image.url="https://addons.community" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
