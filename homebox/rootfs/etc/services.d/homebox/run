@@ -1,0 +1,10 @@
+#!/command/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Homebox
+# Runs the Homebox daemon
+# ==============================================================================
+
+bashio::log.info "Starting Homebox..."
+
+
+exec /app/api

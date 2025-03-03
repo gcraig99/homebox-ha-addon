@@ -1,0 +1,6 @@
+#!/bin/sh
+
+nginx
+echo "Starting Homebox API with args: $1"
+
+/app/api "$1"
