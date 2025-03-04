@@ -75,8 +75,9 @@ RUN \
     && mv /usr/src/bashio/lib /usr/lib/bashio \
     && ln -s /usr/lib/bashio/bashio /usr/bin/bashio
 
-#Copy our conf into the nginx http.d folder.
-#COPY ingress.conf /etc/nginx/http.d/
+#Redirect nginix logs to stdout and stderr
+#RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
+#Copy our conf into the filesystem
 COPY /rootfs /
 
 #Launch nginx with debug options.

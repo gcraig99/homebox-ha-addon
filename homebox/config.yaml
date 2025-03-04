@@ -13,12 +13,15 @@ arch:
 map:
   - share:rw
 init: false
-auth_api: true
+#ingess_entry: "/local_homebox/ingress"
+ingress_port: 8099
+hassio_api: true
+#auth_api: true
 environment:
   HBOX_OPTIONS_CHECK_GITHUB_RELEASE: "false"
 
 #webui: "http://[HOST]:[PORT:7745]/"
-#ingress: true
-image: "ghcr.io/gcraig99/homebox-ha-addon"
+ingress: true
+#image: "ghcr.io/gcraig99/homebox-ha-addon"
 ports:
   7745/tcp: 7745
