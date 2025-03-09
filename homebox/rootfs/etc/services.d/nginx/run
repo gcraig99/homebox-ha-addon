@@ -12,5 +12,7 @@ bashio::log.info "Starting NGINX..."
 if bashio::config.true 'leave_front_door_open'; then
     export DISABLE_HA_AUTHENTICATION=true
 fi
+dns_host=$(bashio::dns.host)
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/includes/resolver.conf
 
 exec nginx

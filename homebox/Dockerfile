@@ -47,7 +47,7 @@ RUN \
     && ./configure --lua-suffix=jit \
     && make \
     && make install \
-    #&& luarocks install lua-resty-http 0.15-0 \
+    ##&& luarocks install lua-resty-http 0.15-0 \
     && mkdir -p /run/nginx \
     && if [ "${BUILD_ARCH}" = "armv7" ]; then \
     export S6_ARCH="arm"; \
